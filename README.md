@@ -42,4 +42,4 @@
             <pre><code>npm run dev</code></pre>
         </li>
     </ol>
-    <p>O projeto está disponível na web para te auxiliar em tarefas do dia a dia, confira <a href="https://course-react-flax.vercel.app/">aqui</a>.
+    <p>O projeto está disponível na web para te auxiliar em tarefas do dia a dia, confira <a href="https://course-react-flax.vercel.app/" target="_blank">aqui</a>.
