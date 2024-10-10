@@ -31,7 +31,7 @@
     <ol>
         <li>
             Clone este repositório:
-            <pre><code>git clone https://github.com/seu-usuario/nome-do-repositorio.git</code></pre>
+            <pre><code>git clone https://github.com/Bernardo2801/course-react.git</code></pre>
         </li>
         <li>
             Instale as dependências:
@@ -39,7 +39,7 @@
         </li>
         <li>
             Rode o projeto:
-            <pre><code>npm start</code></pre>
+            <pre><code>npm run dev</code></pre>
         </li>
     </ol>
     <p>O projeto está disponível na web para te auxiliar em tarefas do dia a dia, confira <a href="https://course-react-flax.vercel.app/">aqui</a>.
