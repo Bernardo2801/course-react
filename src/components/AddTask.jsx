@@ -5,6 +5,7 @@ function AddTask({ onAddTaskSubmit }) {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [date, setDate] = useState("");
+    const today = new Date().toISOString().split("T")[0];
 
     return (
         <div className="space-y-4 p-6 bg-slate-200 rounded-md shadow flex flex-col">
@@ -24,6 +25,7 @@ function AddTask({ onAddTaskSubmit }) {
 
             <Input
                 type="date"
+                min={today}
                 value={date}
                 onChange={(event) => setDate(event.target.value)}
             />
@@ -33,7 +35,7 @@ function AddTask({ onAddTaskSubmit }) {
                     // Verificar se os campos estão preenchidos
                     if (!title.trim() || !description.trim() || !date) {
                         return alert(
-                            "Preencha o título, descrição e data limite da tarefa."
+                            "Preencha o título, descrição, data e horario limite da tarefa."
                         );
                     }
 

@@ -8,9 +8,9 @@ function TaskPage() {
 
     const [searchParams] = useSearchParams();
 
-    const title = searchParams.get("title")
-    const description = searchParams.get("description")
-    const date = searchParams.get("date")
+    const title = searchParams.get("title") || "Título não disponível";
+    const description = searchParams.get("description") || "Descrição não disponível";
+    const date = searchParams.get("date") || "Data não disponível";
 
     function formatDate(dateString) {
         // Divide a string no formato YYYY-MM-DD
@@ -33,8 +33,10 @@ function TaskPage() {
 
                 <div className="bg-slate-200 p-4 rounded-md">
                     <h2 className="text-xl font-bold text-slate-600">{title}</h2>
-                    <p className="text-slate-600">{description}</p>
-                    <p className="text-slate-600"><Calendar />{formatDate(date)}</p>
+                    <p className="text-slate-600 mb-2">{description}</p>
+                    <div className="flex flex-col">
+                        <p className="text-slate-600 inline-flex items-center"><Calendar className="mr-2 mb-2" />{formatDate(date)}</p>
+                    </div>
                 </div>
             </div>
         </div>
